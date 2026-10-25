@@ -4,198 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Victor Carrouée — Support informatique, développement et automatisation.">
+  <meta name="description" content="Victor Carrouée : support informatique, développement et automatisation.">
   <title>Victor Carrouée | Informatique & Développement</title>
-  <style>
-    :root {
-      --navy: #14243a;
-      --blue: #2563eb;
-      --light: #f4f7fb;
-      --text: #263449;
-      --muted: #66758a;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: white;
-      line-height: 1.7;
-    }
-
-    a { color: inherit; text-decoration: none; }
-
-    .container {
-      width: min(1100px, 90%);
-      margin: auto;
-    }
-
-    header {
-      background: white;
-      border-bottom: 1px solid #e5eaf1;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav {
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .logo {
-      font-size: 1.2rem;
-      font-weight: 800;
-      color: var(--navy);
-    }
-
-    nav ul {
-      display: flex;
-      gap: 25px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav a:hover { color: var(--blue); }
-
-    .hero {
-      background: linear-gradient(135deg, #14243a, #243f65);
-      color: white;
-      padding: 100px 0;
-    }
-
-    .eyebrow {
-      color: #9dc1ff;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: .85rem;
-      letter-spacing: 2px;
-    }
-
-    h1 {
-      font-size: clamp(2.4rem, 6vw, 4.3rem);
-      line-height: 1.12;
-      max-width: 800px;
-      margin: 20px 0;
-    }
-
-    .hero p {
-      max-width: 700px;
-      color: #d8e3f2;
-      font-size: 1.1rem;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 30px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-weight: bold;
-      background: var(--blue);
-      color: white;
-    }
-
-    .button.secondary {
-      background: transparent;
-      border: 1px solid #91a7c4;
-    }
-
-    section { padding: 75px 0; }
-
-    .section-light { background: var(--light); }
-
-    h2 {
-      color: var(--navy);
-      font-size: 2rem;
-      line-height: 1.25;
-      margin-top: 0;
-    }
-
-    .intro {
-      color: var(--muted);
-      max-width: 720px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 20px;
-      margin-top: 35px;
-    }
-
-    .card {
-      padding: 25px;
-      background: white;
-      border: 1px solid #e3e9f1;
-      border-radius: 12px;
-    }
-
-    .card h3 { color: var(--navy); }
-
-    .icon { font-size: 1.8rem; }
-
-    .contact {
-      background: var(--navy);
-      color: white;
-      text-align: center;
-    }
-
-    .contact h2 { color: white; }
-
-    .contact p {
-      color: #d8e3f2;
-      max-width: 650px;
-      margin: 0 auto 25px;
-    }
-
-    footer {
-      background: #0d1929;
-      color: #b7c4d6;
-      text-align: center;
-      padding: 24px;
-      font-size: .9rem;
-    }
-
-    @media (max-width: 700px) {
-      nav {
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 18px 0;
-      }
-
-      nav ul { gap: 16px; flex-wrap: wrap; }
-
-      .hero { padding: 70px 0; }
-
-      .cards { grid-template-columns: 1fr; }
-
-      section { padding: 55px 0; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <nav class="container">
-      <a class="logo" href="#">Victor Carrouée</a>
+      <a class="logo" href="index.html">Victor Carrouée</a>
       <ul>
+        <li><a class="active" href="index.html">Accueil</a></li>
+        <li><a href="logiciels.html">Mes logiciels</a></li>
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#competences">Compétences</a></li>
-        <li><a href="#logiciels">Logiciels</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -207,12 +29,11 @@
         <div class="eyebrow">Support informatique · Développement</div>
         <h1>Des solutions informatiques utiles et sur mesure.</h1>
         <p>
-          Bienvenue sur mon site professionnel. Je conçois des outils
-          informatiques et des automatisations pour simplifier les tâches
-          du quotidien.
+          Je conçois des outils informatiques et des automatisations
+          pour simplifier les tâches du quotidien.
         </p>
         <div class="buttons">
-          <a class="button" href="#logiciels">Découvrir mes logiciels</a>
+          <a class="button" href="logiciels.html">Découvrir mes logiciels</a>
           <a class="button secondary" href="#contact">Me contacter</a>
         </div>
       </div>
@@ -223,8 +44,8 @@
         <h2>À propos</h2>
         <p class="intro">
           Technicien support informatique, je m'intéresse au développement
-          d'applications, à l'automatisation et à la création d'outils
-          pratiques. Cette page présente mon parcours et mes réalisations.
+          d'applications, à l'automatisation et à la création d'outils pratiques.
+          Ce site présente mes compétences et mes réalisations.
         </p>
       </div>
     </section>
@@ -255,38 +76,14 @@
       </div>
     </section>
 
-    <section id="logiciels">
-      <div class="container">
-        <h2>Mes logiciels</h2>
-        <p class="intro">
-          Retrouvez ici mes programmes, leurs fonctionnalités et leurs fichiers
-          de téléchargement.
-        </p>
-        <div class="cards">
-          <article class="card">
-            <div class="icon">📊</div>
-            <h3>Outils Excel</h3>
-            <p>Applications d'automatisation et de traitement de données.</p>
-            <p><em>Téléchargement bientôt disponible.</em></p>
-          </article>
-          <article class="card">
-            <div class="icon">🖥️</div>
-            <h3>Applications Windows</h3>
-            <p>Programmes et utilitaires conçus pour faciliter certaines tâches.</p>
-            <p><em>Téléchargement bientôt disponible.</em></p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <h2>Me contacter</h2>
         <p>
           Vous souhaitez échanger sur un projet ou obtenir des informations
-          sur l'un de mes programmes ? Vous pouvez me contacter par e-mail.
+          sur mes programmes ? Contactez-moi par e-mail.
         </p>
-        <!-- Remplace l'adresse ci-dessous par ton adresse professionnelle. -->
+        <!-- Remplacer cette adresse fictive avant publication. -->
         <a class="button" href="mailto:TON-EMAIL@example.com">Envoyer un e-mail</a>
       </div>
     </section>
@@ -301,6 +98,5 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
